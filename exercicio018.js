@@ -1,11 +1,11 @@
 const prompt = require('prompt-sync')()
 
-const idadeMinima = 16
+const idadeMinima = 18
 
 let idade = parseInt(prompt('Digite sua idade: '))
 
 if (idade >= idadeMinima){
-    console.log('Você já pode votar.')
+    console.log('Você já pode dirigir.')
 }else {
-    console.log('Você ainda não tem idade para votar.')
+    console.log('Você ainda não tem idade para dirigir.')
 }
