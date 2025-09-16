@@ -1,7 +1,6 @@
 const prompt = require('prompt-sync')()
 
 const idadeMinima = 16
-
 let idade = parseInt(prompt('Digite sua idade: '))
 
 if (idade >= idadeMinima){
