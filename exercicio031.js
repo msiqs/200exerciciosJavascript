@@ -22,7 +22,7 @@ while(true){
                     console.log(`Então seu número é o 4.`)
                     break;
                 }else if (pergunta4 === 'n'){
-                    console.log(`Seu número é 2.`)
+                    console.log(`Então seu número é o 2.`)
                     break;
             }
                 } else if (pergunta3 === 'n'){
