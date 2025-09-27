@@ -1,7 +1,8 @@
-let i
-for (i = 0; i < 10;){
-    let r = i++
-    let soma = i + r
-    console.log(`${i} + ${r} = ${soma}`)
-    i = soma
+let t = [1, 2, 3]
+console.log(t[0])
+console.log(t[1])
+
+for (i = 2; i < 10; i++){
+    t[i] = t[(i - 2)] + t[(i - 1)]
+    console.log(t[i])
 }
