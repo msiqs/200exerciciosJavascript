@@ -42,9 +42,9 @@ while(true){
                     break;
                 }
             }else if(pergunta2 === 'n'){
-                let pergunta3 = prompt('Então ele é menor que 5? Responda com S ou N: ')
+                let pergunta3 = prompt('Então ele é menor que 5? Responda com S ou N: ').toLowerCase()
                 if (pergunta3 === 's'){
-                    let pergunta4 = prompt('E é maior que 1? Responda com S ou N: ')
+                    let pergunta4 = prompt('E é maior que 1? Responda com S ou N: ').toLowerCase()
                     if (pergunta4 === 's'){
                         console.log(`Então seu número é o 3.`)
                         break;

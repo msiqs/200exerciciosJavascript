@@ -4,14 +4,16 @@ let stopper = 0
 
 do{
     let player1 = prompt('Você é o PLAYER 1, digite seu nick: ').toLowerCase()
-    let player2 = prompt('Você é o PLAYER 2, digite seu nick: ').toLowerCase()
-    if (player1 === player2){
-    console.log('Escolha um nick diferente do nick do player 1.')
-    continue;
-}
+    let player2 = 'BOT'
+//     if (player1 === player2){
+//     console.log('Escolha um nick diferente do nick do player 1.')
+//     continue;
+// }
     while(true){
+    const options = ['pedra', 'papel', 'tesoura']
     let escolha_player1 = prompt(`${player1}: Escolha pedra, papel ou tesoura: `).toLowerCase()
-    let escolha_player2 = prompt(`${player2}: Escolha pedra, papel ou tesoura: `).toLowerCase()
+    let escolha_player2 = options[Math.floor(Math.random() * options.length)]
+    console.log(`${player2} escolheu ${escolha_player2}.`)
     if (escolha_player1 === 'pedra' && escolha_player2 === 'pedra'){
         console.log(`Empate!`)
         continue;
